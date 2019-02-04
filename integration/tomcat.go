@@ -15,7 +15,7 @@ const (
 	MBeanThreadPool             = "Catalina:name=*,type=ThreadPool"
 )
 
-// Tomcat MBean List
+// Tomcat Attribute List
 const (
 	AttributeThreadPool = "maxThreads,currentThreadCount,currentThreadsBusy"
 )
