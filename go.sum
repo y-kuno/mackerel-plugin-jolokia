@@ -1,0 +1,9 @@
+github.com/mackerelio/go-mackerel-plugin v0.0.0-20181105013132-7cbd71bf6464 h1:1m0oltq/cUsxSyEl+ey4CQXqP2gmTIR3W4mwsK/YsPk=
+github.com/mackerelio/go-mackerel-plugin v0.0.0-20181105013132-7cbd71bf6464/go.mod h1:cnhQn7nt6mOZKBya/EA/Bn0RxHDrKJv1XdXoUbiKl2I=
+github.com/mackerelio/golib v0.0.0-20181013165214-798b862d5d4a h1:Z+JVVqW1SPQNxBhQ1s+6/xGbDY1troL9EkW10s3v2/M=
+github.com/mackerelio/golib v0.0.0-20181013165214-798b862d5d4a/go.mod h1:QQXnbzDaHtoPLMpOFWMWyLhxJMBqKEwM5gs6rz+fBxk=
+github.com/y-kuno/go-mackerel-plugin v0.0.0-20190116091706-99e436941363 h1:uwF7KYur1JikSQDzuQitBwPpkShBOfhzd1CFyXazVM4=
+github.com/y-kuno/go-mackerel-plugin v0.0.0-20190116091706-99e436941363/go.mod h1:6vCxEkPYoZa9wU0A046LXoBzNv8ylOd/dEBd/JwqyKI=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.2.2 h1:ZCJp+EgiOT7lHqUV2J862kp8Qj64Jo6az82+3Td9dZw=
+gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=

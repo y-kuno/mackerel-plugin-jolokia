@@ -1,0 +1,78 @@
+# Mackerel Graph Definition
+graphs:
+  - key: 'jvm.memory.heap'
+    label: 'JVM Heap Memory'
+    unit: 'bytes'
+    metrics:
+      - name: 'init'
+        match: true
+      - name: 'committed'
+        match: true
+      - name: 'max'
+        match: true
+      - name: 'used'
+        match: true
+  - key: 'jvm.memory.non_heap'
+    label: 'JVM Heap Memory'
+    unit: 'bytes'
+    metrics:
+      - name: 'init'
+        match: true
+      - name: 'committed'
+        match: true
+      - name: 'max'
+        match: true
+      - name: 'used'
+        match: true
+  - key: 'jvm.class_load'
+    label: 'JVM Class Loaders'
+    unit: 'integer'
+    metrics:
+      - name: 'LoadedClassCount'
+        label: 'Loaded'
+      - name: 'UnloadedClassCount'
+        label: 'Unloaded'
+      - name: 'TotalLoadedClassCount'
+        label: 'Total'
+  - key: 'jvm.threads'
+    label: 'JVM Threads'
+    unit: 'integer'
+    metrics:
+      - name: 'DaemonThreadCount'
+        label: 'Daemon'
+      - name: 'PeakThreadCount'
+        label: 'Peak'
+      - name: 'ThreadCount'
+        label: 'Count'
+  - key: 'jvm.ops.cpu_load'
+    label: 'JVM CPU Load'
+    unit: 'percentage'
+    metrics:
+      - name: 'ProcessCpuLoad'
+        label: 'Process'
+        scale: 100
+      - name: 'SystemCpuLoad'
+        label: 'System'
+        scale: 100
+
+# JMX Metrics
+jmx:
+  - mbean: 'java.lang:type=Memory'
+    attribute:
+      - name: 'HeapMemoryUsage'
+        prefix: "jvm.memory.heap"
+  - mbean: 'java.lang:type=Memory'
+    attribute:
+      - name: 'NonHeapMemoryUsage'
+        prefix: "jvm.memory.non_heap"
+  - mbean: 'java.lang:type=ClassLoading'
+    attribute:
+      - name: 'LoadedClassCount'
+      - name: 'UnloadedClassCount'
+      - name: 'TotalLoadedClassCount'
+  - mbean: 'java.lang:type=Threading'
+    scope:
+      - 'DaemonThreadCount'
+      - 'PeakThreadCount'
+      - 'ThreadCount'
+  - mbean: 'java.lang:type=OperatingSystem/ProcessCpuLoad,SystemCpuLoad'
