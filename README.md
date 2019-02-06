@@ -25,7 +25,7 @@ mackerel-plugin-jolokia [--host=<host>] [--port=<port>] [--metric-key-prefix=<pr
 
 Supported integrations list.
 
-- [Tomcat](doc/tomcat/README.md)
+- [Tomcat](doc/tomcat.md)
 
 ## How to custom metrics
 
